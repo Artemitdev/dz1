@@ -1,7 +1,7 @@
 {
-  "name": "loftschool-builder",
+  "name": "dz_loft",
   "version": "1.0.0",
-  "author": "a.kalin",
+  "author": "a.kravtsov",
   "license": "ISC",
   "scripts": {
     "postinstall": "bower install"
