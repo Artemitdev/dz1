@@ -1,0 +1,93 @@
+doctype html
+html(lang='ru-Ru')
+	head
+		tittle
+		script
+	body
+		.wrapper
+			header.header
+			
+				.header__top
+					.socials
+						ul.social__list
+							li.social__items.social__items-vk
+								a.social__link
+									img.socials__icon(href='../img/head_vk.png')
+							li.social__items.social__items-gh
+								a.social__link
+									img.socials__icon(href='../img/head_gh.png')
+							li.social__items.social__items-in
+								a.social__link
+									img.socials__icon(href='../img/head_in.png')
+									
+					.gamburger
+				.header__desc
+					.block__tittle
+						.avatar
+							img.avatar_icon(href='../img/avatar.png')
+						.tittle__name Блог
+						.tittle_desc Статьи, которые я написал
+						
+						
+			.main__content.container
+			
+				sidebar.sidebar
+					ul.tittle__list
+						li.tittle__item
+							a.tittle__link
+								span Самое важное в SASS
+						li.tittle__item
+							a.tittle__link
+								span Приемы в верстке, без которых не обходится ни один сайт
+						li.tittle__item
+							a.tittle__link
+								span Самый необходимый набор Gulp плагинов
+						li.tittle__item
+							a.tittle__link
+								span Почему я выбрал Jade
+								
+				section.section
+					ul.content__list
+						li.content__item
+							.tittle__article Самое важное в SASS
+							.publication-date 22 ноября 2016
+							article.article
+						li.content__item
+							.tittle__article Приемы в верстке, без которых не обходится ни один сайт
+							.publication-date 13 ноября 2016
+							article.article
+							
+							
+		footer.footer
+		
+			.footer__top
+			
+				nav.nav
+					ul.nav__list
+						li.nav__item
+							a.nav__link Мои работы
+						li.nav__item
+							a.nav__link Обо мне
+						li.nav__item
+							a.nav__link Блог
+						li.nav__item
+							a.nav__link Авторизация
+							
+				.footer__socials
+					ul.footer__social_list
+						li.footer__social_items.footer__social_items-vk
+							a.footer__social_link
+								img.footer__social_icon(href='../img/foot_vk.png')
+						li.footer__social_items.footer__social_items-gh
+							a.footer__social_link
+								img.footer__social_icon(href='../img/foot_gh.png')
+						li.footer__social_items.footer__social_items-in
+							a.footer__social_link
+								img.footer__social_icon(href='../img/foot_in.png')
+								
+			.footer__bottom
+			
+				.left__desc Я веб разработчик из Харькова, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+				.right__desc
+					.copyright Кравцов Артем | создано с любовью в LoftSchool | 2016
+	
