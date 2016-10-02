@@ -28,60 +28,67 @@ html
         header.header.clearfix
             .auth__button Авторизоваться
 
-        .content__welcome
-          .welcome__about-me
-            .avatar__box
-              img.avatar(src="assets/img/avatar.png", alt="Аватар")
-            .name_info
-              .about__me-name Кравцов Артем
-              .about__site Личный сайт Web разработчика
-          .socials
-            ul.socials__list
-              li.socials__item
-                a.socials__link.social__link_vk(href="#")
-                  img.socials__link-pic(src="assets/img/welcome_vk.png", alt="Вконтакте")
-              li.socials__item
-                a.socials__link.social__link_vk(href="#")
-                  img.socials__link-pic(src="assets/img/welcome_gh.png", alt="Github")
-              li.socials__item
-                a.socials__link.social__link_vk(href="#")
-                  img.socials__link-pic(src="assets/img/welcome_in.png", alt="Linkedin")
-          nav.nav__welcome
-            ul.nav__list
-              li.nav__item
-                .block__link
-                  a.nav__link(href="#") Мои работы
-              li.nav__item
-                .block__link
-                  a.nav__link(href="#") Обо мне
-              li.nav__item
-                .block__link
-                  a.nav__link(href="#") Блог
+        .container__welcome
+          .card
+            .section.welcome__inner
+              .block__about
+                .welcome__about-me
+                  .avatar__box
+                    img.avatar(src="assets/img/avatar.png", alt="Аватар")
+                  .name_info
+                    .about__me-name Кравцов Артем
+                    .about__site Личный сайт Web разработчика
+                .socials
+                  ul.socials__list
+                    li.socials__item
+                      a.socials__link.social__link_vk(href="#")
+                        img.socials__link-pic(src="assets/img/welcome_vk.png", alt="Вконтакте")
+                    li.socials__item
+                      a.socials__link.social__link_vk(href="#")
+                        img.socials__link-pic(src="assets/img/welcome_gh.png", alt="Github")
+                    li.socials__item
+                      a.socials__link.social__link_vk(href="#")
+                        img.socials__link-pic(src="assets/img/welcome_in.png", alt="Linkedin")
 
-        .content__welcome.content__welcome-login
-          .welcome__auth Авторизуйтесь
-          .form__auth
-            form
-              .input__name
-                input(type='text', placeholder='Логин')
-              .input__password
-                input(type='password', placeholder='Пароль')
-          .welcome__verification
-            .chebox_i Я человек
-            .robot Вы точно не робот?
-            .radiobuttons
-              span Да
-              span Нет
-
-          .nav.nav__welcome
-            ul.nav__list
-              li.nav__item
-                .block__link
-                  a.nav__link(href="#") На главную
-              li.nav__item
-                .block__link
-                  a.nav__link(href="#") Войти
-      .empty
+              nav.nav__welcome
+                .nav__list
+                  .nav__item
+                    a.nav__link(href="#")
+                      span.nav__title Мои работы
+                  .nav__item
+                    a.nav__link(href="#")
+                      span.nav__title Обо мне
+                  .nav__item
+                    a.nav__link(href="#")
+                      span.nav__title Блог
+            .section.autorization__inner
+              .auth__title Авторизуйтесь
+              form.form(action="", method="post")
+                label.label
+                  input.login__input(type="text", name="login", placeholder="Логин")
+                  .icon__login
+                label.label
+                  input.pass__input(type="password", name="password", placeholder="Пароль")
+                  .icon__pass
+                label.label
+                  input.checkbox__input(type="checkbox", name="checkbox")
+                  | Я человек
+                .auth_question
+                  .question__tittle Вы точно не робот?
+                  label.label__question
+                    input(type='radio', name='radio', value='people')
+                    | Да
+                  label.label__question
+                    input(type='radio', name='radio', value='robot')
+                    | Не уверен
+              .nav__welcome
+                .nav__item.nav__item-auth
+                  a.nav__link(href="")
+                    span.nav__title На главную
+                .nav__item.nav__item-auth
+                  a.nav__link(href="")
+                    span.nav__title Войти
+                  //a.nav__link.nav__link-btn(type="submit") Войти
       footer.footer
           .footer__copyright Кравцов Артем | создано с любовью в Loftschool | 2016
 
