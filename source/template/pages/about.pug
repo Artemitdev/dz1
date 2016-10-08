@@ -1,0 +1,132 @@
+block variables
+
+doctype html
+html
+    headmeta(charset="utf-8")
+        title #{title}
+        meta(content="" name="author")
+        meta(content="" name="description")
+        meta(content="" name="keywords")
+        meta(content="width=device-width, initial-scale=1" name="viewport")
+        meta(content="ie=edge" http-equiv="x-ua-compatible")
+
+        //- favicon block start
+        //- favicon block end
+
+        link(rel='stylesheet' href='/assets/css/foundation.css')
+        link(rel='stylesheet' href='/assets/css/about.css')
+        script(src='/assets/js/foundation.js' defer)
+        script(src='/assets/js/app.js' defer)
+
+        <!--[if lt IE 9]>
+        script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+        <![endif]-->
+    body
+        .wraper
+            header.header
+                .header__top.clearfix
+                    .socials
+                        ul.social__list
+                            li.socials__item
+                                a.social__link(href="#")
+                                    img.socials__link-pic(src="assets/img/vk.svg", alt="Вконтакте")
+                            li.socials__item
+                                a.social__link(href="#")
+                                    img.socials__link-pic(src="assets/img/gh.svg", alt="Вконтакте")
+                            li.socials__item
+                                a.social__link(href="#")
+                                    img.socials__link-pic(src="assets/img/in.svg", alt="Вконтакте")
+
+                    .hamburger
+                        img.hamburger-pic(src="assets/img/hamburger.svg", alt="Меню")
+                .header__desc
+                    .block__tittle
+                        .avatar
+                            img.avatar_icon(src='assets/img/avatar.png')
+                        .tittle__name Кравцов Артем
+                        .tittle_desc Личный сайт веб разработчика
+                .header__triangle
+                    .header__triangle-svg
+                        svg(version='1.1', width='100%', height='160px', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', xml:space='preserve', viewbox='0 0 100 160', preserveaspectratio='none')
+                            polygon(fill='#F0EFE9', points='0,0 50,160 0,160')
+                            polygon(fill='#EFEBE0', points='50,160 100,160 100,0')
+                    .arrow-down-little
+                        // ?xml version="1.0" encoding="utf-8"?
+                        // Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)
+                        svg#Layer_1(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', width='25.18px', height='16.164px', viewbox='0 0 25.18 16.164', enable-background='new 0 0 25.18 16.164', xml:space='preserve')
+                            g
+                                path(fill='#FFFFFF', d='M13.293,15.871c-0.391,0.391-1.016,0.391-1.406,0L0.293,4.293c-0.391-0.391-0.391-1.031,0-1.422\
+                        l2.594-2.578c0.391-0.391,1.016-0.391,1.406,0L12.59,8.59l8.297-8.297c0.391-0.391,1.016-0.391,1.406,0l2.594,2.578\
+                        c0.391,0.391,0.391,1.031,0,1.422L13.293,15.871z')
+            .main__content.container.clearfix
+                .content__var.clearfix
+                    .head__tittle Обо мне
+                    .section
+                        .my_photo
+                            img(src='assets/img/avatar.png')
+                        .section__tittle Кто я
+                        .section__desc Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
+                        |Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+                .skills
+                    .skills__tittle Чем я могу быть полезен вам
+                    .skills__short_desc Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
+                    .block__skills
+                        h2.skills__name Frontend
+                            li.skills__item
+                                .skill(data-percent="60")
+                                    svg(viewbox='0 0 32 32')
+                                        circle.circle(r='16', cx='16', cy='16')
+                                        circle.circle-diagrams(r='16', cx='16', cy='16', stroke-dasharray='72 100')
+                                    .skill__title HTML5
+                            li.skills__item
+                                img.skills__img(src='assets/img/vk.svg')
+                            li.skills__item
+                                img.skills__img(src='assets/img/vk.svg')
+                        h2.skills__name Backend
+                        ul.skills__list
+                           li.skills__item
+                               img.skills__img(src='assets/img/vk.svg')
+                           li.skills__item
+                               img.skills__img(src='assets/img/vk.svg')
+                           li.skills__item
+                               img.skills__img(src='assets/img/vk.svg')
+                           li.skills__item
+                               img.skills__img(src='assets/img/vk.svg')
+                        h2.skills__name Workflow
+                        ul.skills__list
+                            li.skills__item
+                                img.skills__img(src='assets/img/vk.svg')
+                            li.skills__item
+                                img.skills__img(src='assets/img/vk.svg')
+        footer.footer
+
+            .footer__top.clearfix
+
+                nav.nav
+                    ul.nav__list
+                        li.nav__item
+                            a.nav__link(href="#") Мои работы
+                        li.nav__item
+                            a.nav__link(href="#") Обо мне
+                        li.nav__item
+                            a.nav__link(href="#") Блог
+                        li.nav__item
+                            a.nav__link(href="#") Авторизация
+
+                .footer__socials
+                    ul.footer__social_list
+                        li.footer__social_items
+                            a.footer__social_link(href="#")
+                                img.footer__social_icon(src='assets/img/vk.svg')
+                        li.footer__social_items
+                            a.footer__social_link(href="#")
+                                img.footer__social_icon(src='assets/img/gh.svg')
+                        li.footer__social_items
+                            a.footer__social_link(href="#")
+                                img.footer__social_icon(src='assets/img/in.svg')
+
+            .footer__bottom.clearfix
+
+                .left__desc Я веб разработчик из Харькова, и этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool.
+                .right__desc
+                    .copyright Кравцов Артем | создано с любовью в LoftSchool | 2016
