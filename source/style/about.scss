@@ -19,10 +19,11 @@ body{
 }
 
 .header{
+  padding-top: 35px;
   position: relative;
   background: url("../img/bg_header1800.png") no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 95vh;
 }
 
 
@@ -54,6 +55,7 @@ body{
 }
 
 .arrow-down-little {
+  text-align: center;
   position: absolute;
   width: 100%;
   top: 20px;
@@ -150,28 +152,40 @@ li a{
 }
 
 .main__content{
-  margin-bottom: 70px;
+  min-height: 840px;
   color: #455a64;
+  background-color: #F0EFE9;
 }
 
 .content__var{
+
   float: left;
   width: 50%;
   background-color: #F0EFE9;
 }
 
 .head__tittle{
+  margin-top: 40px;
+  text-align: center;
+  font-size: 63px;
   float: left;
-  width: 49%;
+  width: 43%;
 }
 
 .section{
   float: left;
-  width: 49%;
+  width: 55%;
+}
+
+.my_photo{
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .section__tittle{
-
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .skills{
@@ -180,14 +194,85 @@ li a{
   background-color: #EFEBE0;
 }
 
+
+.skills__tittle{
+  margin: 40px auto;
+  text-align: center;
+  font-size: 35px;
+  width: 310px;
+
+}
+
+.skills__name{
+  margin-left: 40px;
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.skills__short_desc{
+  margin-left: 40px;
+  margin-bottom: 60px;
+}
+
+.skills__list{
+  margin-bottom: 40px;
+}
+
+.skill{
+  position: relative;
+}
+
+.skills__item{
+  display: inline-block;
+  margin-left: 40px;
+}
+
 .skill svg {
   width: 110px;
   height: 110px;
+  transform: rotate(-90deg);
+  background: transparent;
+  border-radius: 50%;
+}
+
+
+.circle {
+  fill: transparent;
+  stroke: #dfdcd5;
+  stroke-width: 10;
+  stroke-dasharray: 101 100;
+}
+
+.circle-diagrams {
+  fill: transparent;
+  stroke: #00bfa5;
+  stroke-width: 10;
+}
+
+.skill__title {
+  text-align: center;
+  word-wrap: break-word;
+  width: 66px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #00bfa5;
+  font-size: 14px;
+}
+
+.block__skills{
+  margin-bottom: 70px;
+}
+
+.map{
+  height: 1075px;
 }
 
 
 .footer{
-  height: 165px;
+  height: 166px;
   //margin-top: -165px;
   position: relative;
   background: #555b5e;

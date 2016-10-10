@@ -63,41 +63,83 @@ html
                     .head__tittle Обо мне
                     .section
                         .my_photo
-                            img(src='assets/img/avatar.png')
+                            img(src='assets/img/about_me.png')
                         .section__tittle Кто я
-                        .section__desc Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты.
-                        |Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
+                        .section__desc Я веб разработчик из Новосибирска. Мне 27 лет. Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проекты. Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент. А пока посмотрите,как тут всё классно и красиво!
                 .skills
                     .skills__tittle Чем я могу быть полезен вам
                     .skills__short_desc Больше всего меня привлекет Frontend разработка, но я также знаком и могу решать не сложные задачина Backend. Но давайте по порядку.
                     .block__skills
-                        h2.skills__name Frontend
+                        .skills__name Frontend
+                        ul.skills__list
                             li.skills__item
-                                .skill(data-percent="60")
+                                .skill(data-percent="70")
                                     svg(viewbox='0 0 32 32')
                                         circle.circle(r='16', cx='16', cy='16')
                                         circle.circle-diagrams(r='16', cx='16', cy='16', stroke-dasharray='72 100')
                                     .skill__title HTML5
                             li.skills__item
-                                img.skills__img(src='assets/img/vk.svg')
+                                .skill(data-percent="50")
+                                    svg(viewbox='0 0 32 32')
+                                        circle.circle(r='16', cx='16', cy='16')
+                                        circle.circle-diagrams(r='16', cx='16', cy='16', stroke-dasharray='50 100')
+                                    .skill__title CSS3
                             li.skills__item
-                                img.skills__img(src='assets/img/vk.svg')
-                        h2.skills__name Backend
-                        ul.skills__list
-                           li.skills__item
-                               img.skills__img(src='assets/img/vk.svg')
-                           li.skills__item
-                               img.skills__img(src='assets/img/vk.svg')
-                           li.skills__item
-                               img.skills__img(src='assets/img/vk.svg')
-                           li.skills__item
-                               img.skills__img(src='assets/img/vk.svg')
-                        h2.skills__name Workflow
+                                .skill(data-percent="80")
+                                    svg(viewbox='0 0 32 32')
+                                        circle.circle(r='16', cx='16', cy='16')
+                                        circle.circle-diagrams(r='16', cx='16', cy='16', stroke-dasharray='80 100')
+                                    .skill__title JavaScript&JQuery
+                        .skills__name Backend
                         ul.skills__list
                             li.skills__item
-                                img.skills__img(src='assets/img/vk.svg')
+                                .skill(data-percent="60")
+                                    svg(viewbox='0 0 32 32')
+                                        circle.circle(r='16', cx='16', cy='16')
+                                        circle.circle-diagrams(r='16', cx='16', cy='16', stroke-dasharray='72 100')
+                                    .skill__title PHP
                             li.skills__item
-                                img.skills__img(src='assets/img/vk.svg')
+                                .skill(data-percent="60")
+                                    svg(viewbox='0 0 32 32')
+                                        circle.circle(r='16', cx='16', cy='16')
+                                        circle.circle-diagrams(r='16', cx='16', cy='16', stroke-dasharray='72 100')
+                                    .skill__title MySQL
+                            li.skills__item
+                                .skill(data-percent="60")
+                                    svg(viewbox='0 0 32 32')
+                                        circle.circle(r='16', cx='16', cy='16')
+                                        circle.circle-diagrams(r='16', cx='16', cy='16', stroke-dasharray='72 100')
+                                    .skill__title NodeJS&npm
+                            li.skills__item
+                                .skill(data-percent="60")
+                                    svg(viewbox='0 0 32 32')
+                                        circle.circle(r='16', cx='16', cy='16')
+                                        circle.circle-diagrams(r='16', cx='16', cy='16', stroke-dasharray='72 100')
+                                    .skill__title Mongo.db
+                        .skills__name Workflow
+                        ul.skills__list
+                            li.skills__item
+                                .skill(data-percent="60")
+                                    svg(viewbox='0 0 32 32')
+                                        circle.circle(r='16', cx='16', cy='16')
+                                        circle.circle-diagrams(r='16', cx='16', cy='16', stroke-dasharray='72 100')
+                                    .skill__title Git
+                            li.skills__item
+                                .skill(data-percent="60")
+                                    svg(viewbox='0 0 32 32')
+                                        circle.circle(r='16', cx='16', cy='16')
+                                        circle.circle-diagrams(r='16', cx='16', cy='16', stroke-dasharray='72 100')
+                                    .skill__title Gulp
+                            li.skills__item
+                                .skill(data-percent="60")
+                                    svg(viewbox='0 0 32 32')
+                                        circle.circle(r='16', cx='16', cy='16')
+                                        circle.circle-diagrams(r='16', cx='16', cy='16', stroke-dasharray='72 100')
+                                    .skill__title Bower
+            .block_map
+                .contacts
+                .map#map
+                    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD0uTEoZ-iEYuV-nMfJFlj7jMPtMisEjak', type='text/javascript')
         footer.footer
 
             .footer__top.clearfix
