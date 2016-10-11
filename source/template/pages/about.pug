@@ -17,6 +17,8 @@ html
         link(rel='stylesheet' href='/assets/css/about.css')
         script(src='/assets/js/foundation.js' defer)
         script(src='/assets/js/app.js' defer)
+        script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD0uTEoZ-iEYuV-nMfJFlj7jMPtMisEjak&callback=initMap', async='', defer='')
+
 
         <!--[if lt IE 9]>
         script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
@@ -136,10 +138,16 @@ html
                                         circle.circle(r='16', cx='16', cy='16')
                                         circle.circle-diagrams(r='16', cx='16', cy='16', stroke-dasharray='72 100')
                                     .skill__title Bower
-            .block_map
-                .contacts
-                .map#map
-                    script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD0uTEoZ-iEYuV-nMfJFlj7jMPtMisEjak', type='text/javascript')
+        .map
+            #map.map__api
+            .map__contact
+                .title-medium.title-dashes Контакты
+                ul.map__contact-list
+                    li.map__contact-item
+                    li.map__contact-item
+                    li.map__contact-item
+                    li.map__contact-item
+
         footer.footer
 
             .footer__top.clearfix
